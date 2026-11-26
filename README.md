@@ -1,55 +1,49 @@
-<div align="right"><a href="README.md">EN</a> · <a href="README.ru.md">RU</a></div>
+<div align="right"><a href="README.md">Русский</a> · <a href="README.en.md">English</a></div>
 
-# Pavel’s ASCII Gallery
+# ASCII-галерея Павла
+
+## Галерея
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <details>
-        <summary><strong>Bloom</strong> · A flower made of light</summary>
-        <br>
-        <img src="artworks/bloom/preview.gif" alt="A glowing ASCII flower opening" loading="lazy" width="100%">
-        <p><a href="artworks/bloom/main.py">Source</a></p>
-      </details>
+      <h3>Bloom</h3>
+      <p>Цветок раскрывается и рассыпается на светящиеся символы.</p>
+      <img src="artworks/bloom/preview.gif" alt="Цветок из символов" loading="lazy" width="320">
+      <p><a href="artworks/bloom/main.py">Код</a></p>
     </td>
     <td width="50%" valign="top">
-      <details>
-        <summary><strong>Butterfly</strong> · A flight in symbols</summary>
-        <br>
-        <img src="artworks/butterfly/preview.gif" alt="A butterfly formed from blue characters" loading="lazy" width="100%">
-        <p><a href="artworks/butterfly/main.py">Source</a></p>
-      </details>
+      <h3>Butterfly</h3>
+      <p>Бабочка вылетает из кокона.</p>
+      <img src="artworks/butterfly/preview.gif" alt="Бабочка из символов" loading="lazy" width="320">
+      <p><a href="artworks/butterfly/main.py">Код</a></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <details>
-        <summary><strong>Blackhole</strong> · A galaxy folding inward</summary>
-        <br>
-        <img src="artworks/blackhole/preview.gif" alt="A black hole surrounded by character-built stars" loading="lazy" width="100%">
-        <p><a href="artworks/blackhole/blackhole.py">Source</a></p>
-      </details>
+      <h3>Blackhole</h3>
+      <p>Галактика из символов сжимается в чёрную дыру.</p>
+      <img src="artworks/blackhole/preview.gif" alt="Чёрная дыра из символов" loading="lazy" width="320">
+      <p><a href="artworks/blackhole/blackhole.py">Код</a></p>
     </td>
     <td width="50%" valign="top">
-      <details>
-        <summary><strong>Eye</strong> · A gaze drawn in glyphs</summary>
-        <br>
-        <img src="artworks/eye/preview.gif" alt="An eye made from warm-colored characters" loading="lazy" width="100%">
-        <p><a href="artworks/eye/eye.py">Source</a></p>
-      </details>
+      <h3>Eye</h3>
+      <p>Глаз из символов моргает и затягивает сцену в зрачок.</p>
+      <img src="artworks/eye/preview.gif" alt="Глаз из символов" loading="lazy" width="320">
+      <p><a href="artworks/eye/eye.py">Код</a></p>
     </td>
   </tr>
 </table>
 
-<details>
-  <summary><strong>Excalibur</strong> · Video to ASCII</summary>
-  <p>Converts a video clip you provide. Requires FFmpeg and FFprobe; no sample clip is included.</p>
-  <a href="artworks/excalibur/excalibur.py">Source</a>
-</details>
+## Инструмент
 
-## Run
+**Excalibur** превращает видео в ASCII-анимацию. Нужны FFmpeg и FFprobe; исходное видео не включено.
 
-Python 3.10+.
+[Код](artworks/excalibur/excalibur.py)
+
+## Установка и запуск
+
+Нужен Python 3.10 или новее.
 
 ### Windows · PowerShell
 
@@ -67,8 +61,8 @@ python3 -m venv .venv
 .venv/bin/python artworks/bloom/main.py
 ```
 
-Use the `.venv` interpreter to run the other scripts listed above.
+Для запуска другой работы укажи её скрипт вместо `artworks/bloom/main.py`.
 
-## Credits
+## Авторство
 
-Bloom and Butterfly are by [Edward Jones (@edjonesv)](https://github.com/edwardjones7/ascii-art) (commit `4e098f4`). See [LICENSE](LICENSE).
+Bloom и Butterfly создал [Edward Jones (@edjonesv)](https://github.com/edwardjones7/ascii-art), commit `4e098f4`. Лицензия — [MIT](LICENSE).

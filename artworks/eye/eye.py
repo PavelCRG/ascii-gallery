@@ -1,12 +1,3 @@
-"""Женский глаз из символов. Открывается в долю музыки, один раз косится и ехидно щурится,
-моргает, камера влетает в зрачок (звёзды летят навстречу), внутри бьётся сердечко из фразы,
-влёт в сердечко -> символы складываются обратно в закрытый глаз (бесконечная петля).
-
-Запуск окна:      python eye.py
-Запись в mp4:     python eye.py --export eye.mp4 --audio music_tiktok.m4a
-Вертикаль 9:16:   python eye.py --export eye_9x16.mp4 --vertical --audio music_tiktok.m4a
-Кадры:            python eye.py --still 3 8 15 24 [--vertical]
-"""
 import argparse
 import math
 import os
