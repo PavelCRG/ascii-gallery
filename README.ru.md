@@ -28,6 +28,28 @@
 
 [Исходный код](artworks/butterfly/main.py)
 
+### 03 — Blackhole
+
+Трёхмерная галактика из символов сжимается в чёрную дыру, вспыхивает и возвращается к началу.
+
+![ASCII-анимация Blackhole](artworks/blackhole/preview.gif)
+
+[Исходный код](artworks/blackhole/blackhole.py)
+
+### 04 — Eye
+
+Глаз из символов моргает и затягивает камеру в зрачок.
+
+![ASCII-анимация Eye](artworks/eye/preview.gif)
+
+[Исходный код](artworks/eye/eye.py)
+
+### 05 — Excalibur
+
+Инструмент превращает выбранное видео в ASCII-анимацию. Нужны входной видеофайл, FFmpeg и FFprobe; пример видео не включён.
+
+[Исходный код](artworks/excalibur/excalibur.py)
+
 ## Запуск
 
 Нужен Python 3.10 или новее. Создай виртуальное окружение и установи общие зависимости из корня репозитория:
@@ -68,8 +90,12 @@ python main.py
 
 Нажми пробел, чтобы запустить анимацию заново; `Esc` закрывает окно. Вид символов немного зависит от моноширинного шрифта системы.
 
+Eye открывает окно с анимацией. Blackhole экспортирует видео командой `python blackhole.py --export blackhole.mp4 --plain`. Excalibur принимает путь к видео, например `python excalibur.py clip.mp4 --export result.mp4 --to 10`. Для экспорта видео нужны FFmpeg и FFprobe.
+
 ## Авторство и лицензия
 
 Галерею и её оформление собрал **Pavelcrg**. Bloom и Butterfly, включая оригинальный код и изображения, создал **Edward Jones (@edjonesv)**; работы взяты из [его репозитория](https://github.com/edwardjones7/ascii-art), commit `4e098f4`.
+
+Blackhole, Eye и Excalibur предоставлены Pavelcrg.
 
 Оригинальное уведомление о лицензии MIT сохранено в [LICENSE](LICENSE). Уведомление Pavelcrg относится к оформлению галереи и этому README.
