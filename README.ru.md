@@ -53,36 +53,27 @@
 
 ## Быстрый запуск
 
-Нужен Python 3.10 или новее.
+Нужен Python 3.10 или новее. Создай окружение проекта, установи зависимости и запусти Bloom из корневой папки репозитория.
 
-```bash
-python -m venv .venv
-```
-
-Активируй виртуальное окружение:
+### Windows · PowerShell
 
 ```powershell
-.venv\Scripts\Activate.ps1
+python -m venv .venv
+& .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+& .\.venv\Scripts\python.exe .\artworks\bloom\main.py
 ```
+
+### macOS · Linux
 
 ```bash
-source .venv/bin/activate
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python artworks/bloom/main.py
 ```
 
-Установи зависимости:
+Для запуска всегда используй Python из `.venv`: в этом окружении установлены NumPy и остальные зависимости проекта. Чтобы запустить другую работу, замени последний путь на её скрипт: `artworks/butterfly/main.py`, `artworks/blackhole/blackhole.py` или `artworks/eye/eye.py`.
 
-```bash
-python -m pip install -r requirements.txt
-```
-
-Запусти работу из её папки. Например:
-
-```bash
-cd artworks/bloom
-python main.py
-```
-
-Eye открывает окно с анимацией. Blackhole умеет сохранять видео командой `python blackhole.py --export blackhole.mp4 --plain`. Excalibur принимает путь к видео, например `python excalibur.py clip.mp4 --export result.mp4 --to 10`.
+Eye открывает окно с анимацией. Blackhole умеет сохранять видео командой `blackhole.py --export blackhole.mp4 --plain`. Excalibur принимает путь к видео, например `excalibur.py clip.mp4 --export result.mp4 --to 10`; ему также нужны FFmpeg и FFprobe.
 
 ## Авторство и лицензия
 

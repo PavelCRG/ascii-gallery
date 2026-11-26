@@ -53,36 +53,27 @@ Click a still image to watch its animation.
 
 ## Quick start
 
-Requires Python 3.10 or newer.
+Requires Python 3.10 or newer. Create a project environment, install its dependencies, then run Bloom from the repository root.
 
-```bash
-python -m venv .venv
-```
-
-Activate the environment:
+### Windows · PowerShell
 
 ```powershell
-.venv\Scripts\Activate.ps1
+python -m venv .venv
+& .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+& .\.venv\Scripts\python.exe .\artworks\bloom\main.py
 ```
+
+### macOS · Linux
 
 ```bash
-source .venv/bin/activate
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python artworks/bloom/main.py
 ```
 
-Install dependencies:
+Use the `.venv` interpreter for every run; it contains NumPy and the other project dependencies. To launch another piece, replace the final path with its script: `artworks/butterfly/main.py`, `artworks/blackhole/blackhole.py`, or `artworks/eye/eye.py`.
 
-```bash
-python -m pip install -r requirements.txt
-```
-
-Run an artwork from its folder. For example:
-
-```bash
-cd artworks/bloom
-python main.py
-```
-
-Eye opens an animation window. Blackhole can export a video with `python blackhole.py --export blackhole.mp4 --plain`. Excalibur accepts a video path, for example `python excalibur.py clip.mp4 --export result.mp4 --to 10`.
+Eye opens an animation window. Blackhole can export a video with `blackhole.py --export blackhole.mp4 --plain`. Excalibur accepts a video path, for example `excalibur.py clip.mp4 --export result.mp4 --to 10`; it needs FFmpeg and FFprobe.
 
 ## Credits & license
 
