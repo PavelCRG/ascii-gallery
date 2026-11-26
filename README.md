@@ -1,8 +1,8 @@
 <div align="center">
 
-# PAVELCRG · ASCII ART
+# ASCII Art Gallery
 
-Animated scenes built from characters, color, and motion.
+**Small worlds, drawn one character at a time.**
 
 [English](README.md) · [Русский](README.ru.md)
 
@@ -12,90 +12,78 @@ Animated scenes built from characters, color, and motion.
 
 ## Gallery
 
-### 01 — Bloom
+Click a still image to watch its animation.
 
-A flower opens, then scatters into glowing fragments.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Bloom</h3>
+      <a href="artworks/bloom/preview.gif"><img src="artworks/bloom/thumbnail.png" width="360" alt="A flower made of glowing characters"></a>
+      <p>A flower opens and scatters into glowing fragments.</p>
+      <a href="artworks/bloom/preview.gif">▶ Animation</a> · <a href="artworks/bloom/main.py">Source</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Butterfly</h3>
+      <a href="artworks/butterfly/preview.gif"><img src="artworks/butterfly/thumbnail.png" width="360" alt="A butterfly formed from blue characters"></a>
+      <p>A chrysalis cracks open, and a butterfly takes flight.</p>
+      <a href="artworks/butterfly/preview.gif">▶ Animation</a> · <a href="artworks/butterfly/main.py">Source</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Blackhole</h3>
+      <a href="artworks/blackhole/preview.gif"><img src="artworks/blackhole/thumbnail.png" width="360" alt="A black hole surrounded by character-built stars"></a>
+      <p>A character-built galaxy folds into a black hole.</p>
+      <a href="artworks/blackhole/preview.gif">▶ Animation</a> · <a href="artworks/blackhole/blackhole.py">Source</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Eye</h3>
+      <a href="artworks/eye/preview.gif"><img src="artworks/eye/thumbnail.png" width="360" alt="An eye made from warm-colored characters"></a>
+      <p>A watchful eye blinks and pulls the scene into its pupil.</p>
+      <a href="artworks/eye/preview.gif">▶ Animation</a> · <a href="artworks/eye/eye.py">Source</a>
+    </td>
+  </tr>
+</table>
 
-![Bloom ASCII animation](artworks/bloom/preview.gif)
+## Tool
 
-[Source code](artworks/bloom/main.py)
-
-### 02 — Butterfly
-
-A chrysalis cracks open, and a butterfly takes flight.
-
-![Butterfly ASCII animation](artworks/butterfly/preview.gif)
-
-[Source code](artworks/butterfly/main.py)
-
-### 03 — Blackhole
-
-A 3D character galaxy collapses into a black hole, flashes, then loops back to the beginning.
-
-![Blackhole ASCII animation](artworks/blackhole/preview.gif)
-
-[Source code](artworks/blackhole/blackhole.py)
-
-### 04 — Eye
-
-A symbol-built eye blinks, then draws the camera into its pupil.
-
-![Eye ASCII animation](artworks/eye/preview.gif)
-
-[Source code](artworks/eye/eye.py)
-
-### 05 — Excalibur
-
-A video-to-ASCII tool that turns a clip you provide into animated character art. It needs an input video, FFmpeg, and FFprobe; no sample video is included.
+**Excalibur** turns a video clip you provide into ASCII animation. It requires FFmpeg and FFprobe; no sample clip is included.
 
 [Source code](artworks/excalibur/excalibur.py)
 
-## Run
+## Quick start
 
-Requires Python 3.10 or newer. From the repository root, create a virtual environment and install the shared dependencies:
+Requires Python 3.10 or newer.
 
 ```bash
 python -m venv .venv
 ```
 
-Windows PowerShell:
+Activate the environment:
 
 ```powershell
 .venv\Scripts\Activate.ps1
 ```
 
-macOS / Linux:
-
 ```bash
 source .venv/bin/activate
 ```
+
+Install dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-Run either command from the repository root. The frames will be written beside each piece's source:
+Run an artwork from its folder. For example:
 
 ```bash
-# From the repository root
 cd artworks/bloom
 python main.py
 ```
 
-```bash
-# From the repository root
-cd artworks/butterfly
-python main.py
-```
-
-Press Space to replay; press Esc to close. The character rendering varies slightly with the system monospace font.
-
-Eye opens a live window. Blackhole can export a video with `python blackhole.py --export blackhole.mp4 --plain`. Excalibur takes a video path, for example `python excalibur.py clip.mp4 --export result.mp4 --to 10`. Video exports need FFmpeg and FFprobe.
+Eye opens an animation window. Blackhole can export a video with `python blackhole.py --export blackhole.mp4 --plain`. Excalibur accepts a video path, for example `python excalibur.py clip.mp4 --export result.mp4 --to 10`.
 
 ## Credits & license
 
-Gallery and presentation by **Pavelcrg**. Bloom and Butterfly, including their original code and artwork, are by **Edward Jones (@edjonesv)** and are included from [his repository](https://github.com/edwardjones7/ascii-art) at commit `4e098f4`.
-
-Blackhole, Eye, and Excalibur were provided by Pavelcrg.
-
-The original MIT notice is preserved in [LICENSE](LICENSE). Pavelcrg's notice covers the gallery presentation and this README.
+Bloom and Butterfly, including their original code and artwork, are by [Edward Jones (@edjonesv)](https://github.com/edwardjones7/ascii-art) (commit `4e098f4`). The original MIT license notice is preserved in [LICENSE](LICENSE).
