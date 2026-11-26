@@ -1,11 +1,5 @@
-<div align="center">
-
-# pavelcrg · ASCII ART
-
-**Characters in motion.**
-
-[English](README.md) · [Русский](README.ru.md)
-
+<div align="right">
+<strong>pavelcrg</strong> <sub>· ASCII ART</sub> &nbsp; <a href="README.md">EN</a> / <a href="README.ru.md">RU</a>
 </div>
 
 <table>
