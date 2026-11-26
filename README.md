@@ -35,11 +35,20 @@
   </tr>
 </table>
 
-## Инструмент
+## Excalibur
 
-**Excalibur** превращает видео в ASCII-анимацию. Нужны FFmpeg и FFprobe; исходное видео не включено.
-
-[Код](artworks/excalibur/excalibur.py)
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="artworks/excalibur/preview.gif" alt="Bloom, преобразованный Excalibur в ASCII" loading="lazy" width="320">
+    </td>
+    <td width="50%" valign="middle">
+      <p>Пример видео, преобразованного в ASCII.</p>
+      <p>Для своих видео нужны FFmpeg и FFprobe.</p>
+      <p><a href="artworks/excalibur/excalibur.py">Код</a></p>
+    </td>
+  </tr>
+</table>
 
 ## Установка и запуск
 
