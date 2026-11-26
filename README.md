@@ -1,6 +1,6 @@
-<div align="right">
-<strong>pavelcrg</strong> <sub>· ASCII ART</sub> &nbsp; <a href="README.md">EN</a> / <a href="README.ru.md">RU</a>
-</div>
+<div align="right"><a href="README.md">EN</a> · <a href="README.ru.md">RU</a></div>
+
+# Pavel’s ASCII Gallery
 
 <table>
   <tr>
