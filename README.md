@@ -28,22 +28,6 @@ A chrysalis cracks open, and a butterfly takes flight.
 
 [Source code](artworks/butterfly/main.py)
 
-## Text study
-
-A small bloom built around the animations' character ramp: `. : ; = + * x o % # & @`.
-
-```text
-                    . : ;
-               . : + * x * + : .
-          . : + x o % # @ # % o x + : .
-        ; + x o % # & @ & # % o x + ;
-          . : + x o % # @ # % o x + : .
-               . : + * x * + : .
-                    = | =
-                      |
-                *=====+=====*
-```
-
 ## Run
 
 Requires Python 3.10 or newer. From the repository root, create a virtual environment and install the shared dependencies:
