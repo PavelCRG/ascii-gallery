@@ -1,59 +1,61 @@
 <div align="center">
 
-# ASCII-галерея
+# pavelcrg · ASCII ART
 
-**Маленькие миры, нарисованные символами.**
+**Символы в движении.**
 
 [English](README.md) · [Русский](README.ru.md)
 
 </div>
 
----
-
-## Галерея
-
-Нажми на изображение, чтобы открыть анимацию.
-
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>Bloom</h3>
-      <a href="artworks/bloom/preview.gif"><img src="artworks/bloom/thumbnail.png" width="360" alt="Цветок из светящихся символов"></a>
-      <p>Цветок раскрывается и рассыпается на светящиеся частицы.</p>
-      <a href="artworks/bloom/preview.gif">▶ Анимация</a> · <a href="artworks/bloom/main.py">Код</a>
+      <details>
+        <summary><strong>Bloom</strong> · Цветок из света</summary>
+        <br>
+        <img src="artworks/bloom/preview.gif" alt="Светящийся ASCII-цветок раскрывается" loading="lazy" width="100%">
+        <p><a href="artworks/bloom/main.py">Код</a></p>
+      </details>
     </td>
     <td width="50%" valign="top">
-      <h3>Butterfly</h3>
-      <a href="artworks/butterfly/preview.gif"><img src="artworks/butterfly/thumbnail.png" width="360" alt="Бабочка из синих символов"></a>
-      <p>Кокон раскрывается, и бабочка отправляется в полёт.</p>
-      <a href="artworks/butterfly/preview.gif">▶ Анимация</a> · <a href="artworks/butterfly/main.py">Код</a>
+      <details>
+        <summary><strong>Butterfly</strong> · Полёт из символов</summary>
+        <br>
+        <img src="artworks/butterfly/preview.gif" alt="Бабочка из синих символов" loading="lazy" width="100%">
+        <p><a href="artworks/butterfly/main.py">Код</a></p>
+      </details>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>Blackhole</h3>
-      <a href="artworks/blackhole/preview.gif"><img src="artworks/blackhole/thumbnail.png" width="360" alt="Чёрная дыра среди звёзд из символов"></a>
-      <p>Галактика из символов сжимается в чёрную дыру.</p>
-      <a href="artworks/blackhole/preview.gif">▶ Анимация</a> · <a href="artworks/blackhole/blackhole.py">Код</a>
+      <details>
+        <summary><strong>Blackhole</strong> · Галактика схлопывается внутрь</summary>
+        <br>
+        <img src="artworks/blackhole/preview.gif" alt="Чёрная дыра среди звёзд из символов" loading="lazy" width="100%">
+        <p><a href="artworks/blackhole/blackhole.py">Код</a></p>
+      </details>
     </td>
     <td width="50%" valign="top">
-      <h3>Eye</h3>
-      <a href="artworks/eye/preview.gif"><img src="artworks/eye/thumbnail.png" width="360" alt="Глаз из символов тёплых оттенков"></a>
-      <p>Внимательный глаз моргает и затягивает сцену в зрачок.</p>
-      <a href="artworks/eye/preview.gif">▶ Анимация</a> · <a href="artworks/eye/eye.py">Код</a>
+      <details>
+        <summary><strong>Eye</strong> · Взгляд из символов</summary>
+        <br>
+        <img src="artworks/eye/preview.gif" alt="Глаз из символов тёплых оттенков" loading="lazy" width="100%">
+        <p><a href="artworks/eye/eye.py">Код</a></p>
+      </details>
     </td>
   </tr>
 </table>
 
-## Инструмент
+<details>
+  <summary><strong>Excalibur</strong> · Видео в ASCII</summary>
+  <p>Преобразует выбранный видеофрагмент. Нужны FFmpeg и FFprobe; примера видео нет.</p>
+  <a href="artworks/excalibur/excalibur.py">Код</a>
+</details>
 
-**Excalibur** превращает выбранный видеофрагмент в ASCII-анимацию. Нужны FFmpeg и FFprobe; примера видео в проекте нет.
+## Запуск
 
-[Исходный код](artworks/excalibur/excalibur.py)
-
-## Быстрый запуск
-
-Нужен Python 3.10 или новее. Создай окружение проекта, установи зависимости и запусти Bloom из корневой папки репозитория.
+Python 3.10+.
 
 ### Windows · PowerShell
 
@@ -71,10 +73,8 @@ python3 -m venv .venv
 .venv/bin/python artworks/bloom/main.py
 ```
 
-Для запуска всегда используй Python из `.venv`: в этом окружении установлены NumPy и остальные зависимости проекта. Чтобы запустить другую работу, замени последний путь на её скрипт: `artworks/butterfly/main.py`, `artworks/blackhole/blackhole.py` или `artworks/eye/eye.py`.
+Для запуска остальных работ используй Python из `.venv` и путь к нужному скрипту выше.
 
-Eye открывает окно с анимацией. Blackhole умеет сохранять видео командой `blackhole.py --export blackhole.mp4 --plain`. Excalibur принимает путь к видео, например `excalibur.py clip.mp4 --export result.mp4 --to 10`; ему также нужны FFmpeg и FFprobe.
+## Авторство
 
-## Авторство и лицензия
-
-Bloom и Butterfly, включая оригинальный код и изображения, создал [Edward Jones (@edjonesv)](https://github.com/edwardjones7/ascii-art) (commit `4e098f4`). Оригинальное уведомление о лицензии MIT сохранено в [LICENSE](LICENSE).
+Bloom и Butterfly создал [Edward Jones (@edjonesv)](https://github.com/edwardjones7/ascii-art) (commit `4e098f4`). См. [LICENSE](LICENSE).
