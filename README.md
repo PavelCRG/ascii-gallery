@@ -71,7 +71,3 @@ python3 -m venv .venv
 ```
 
 Для запуска другой работы укажи её скрипт вместо `artworks/bloom/main.py`.
-
-## Авторство
-
-Bloom и Butterfly создал [Edward Jones (@edjonesv)](https://github.com/edwardjones7/ascii-art), commit `4e098f4`. Лицензия — [MIT](LICENSE).

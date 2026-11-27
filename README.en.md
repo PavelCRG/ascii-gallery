@@ -71,7 +71,3 @@ python3 -m venv .venv
 ```
 
 To run another piece, replace `artworks/bloom/main.py` with its script path.
-
-## Credits
-
-Bloom and Butterfly were created by [Edward Jones (@edjonesv)](https://github.com/edwardjones7/ascii-art), commit `4e098f4`. See [MIT license](LICENSE).
